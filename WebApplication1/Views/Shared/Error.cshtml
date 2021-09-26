@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Error</title>
+</head>
+<body>
+    <hgroup>
+        <h1>Error.</h1>
+
+   @model System.Web.Mvc.HandleErrorInfo
+
+       @if (Model != null)
+       {
+        <div>
+            <h2>
+                @Model.Exception.Message
+                <br />
+                @Model.ControllerName
+            </h2>
+            
+</div>
+       }
+        
+    </hgroup>
+</body>
+</html>
